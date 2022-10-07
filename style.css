@@ -1,0 +1,95 @@
+:root{
+    --fundo1: #5d2ce6;
+    --fundo2: #5d1aea;
+    --fundo3: #5a2ae0;
+    --fundo4: #511ac4;
+    --cor-letra: white;
+
+    color: var(--cor-letra);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#principal{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#principal>*{
+
+    /* border: 1px solid black; */
+}
+
+#principal .limite{
+    margin: auto;
+    max-width: 300px;
+}
+
+#principal>main{
+   flex-grow: 1;
+}
+
+#principal>*:nth-child(1){
+    background-color: var(--fundo1);
+}
+
+#principal>*:nth-child(2){
+    background-color: var(--fundo2);
+}
+
+#principal>*:nth-child(3){
+    background-color: var(--fundo3);
+}
+
+#principal>*:nth-child(4){
+    background-color: var(--fundo4);
+}
+
+#principal>footer{
+    border-bottom:4px solid var(--cor-destaque) ;
+}
+
+.jumbo{
+    background-image: url(jumbo) ;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 20rem;
+}
+
+.jumbo header{
+    text-align: center;
+}
+
+.jumbo em{
+    display: block;
+    font-size: 3em;
+    text-transform: capitalize;
+}
+
+.jumbo section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.jumbo section .texto{
+    flex-basis: 50%;
+    flex-grow: 1;
+    border: 1px solid white;
+}
+
+.jumbo section .iconografia{
+    flex-grow: 1;
+    border: 1px solid white;
+    display:flex;
+    justify-content:space-between ;
+}
+
+.jumbo section .iconografia{
+
